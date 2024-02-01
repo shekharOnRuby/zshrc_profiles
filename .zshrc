@@ -92,15 +92,16 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="code ~/.zshrc"
+alias ohmyzsh="code ~/.oh-my-zsh"
 alias pull='git pull'
 alias branch='git branch'
 alias push='git push'
 alias add='git add -A'
 alias status='git status'
-alias show='ls -slah'
+alias ll='ls -slah'
 alias emacs='emacs --reverse-video'
+#alias python=/usr/local/bin/python3
 
 #export PS1=" "
 
@@ -110,3 +111,8 @@ export PATH="/usr/local/opt/sqlite/bin:$PATH"
 export PATH="$HOME/bin/my_scripts:$PATH"
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
+export PATH="$PATH:$HOME/.jenv/bin"
+export PATH="$PATH:$HOME/Library/Python/3.8/bin"
+eval "$(jenv init -)"
+export HOMEBREW_GITHUB_API_TOKEN=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
